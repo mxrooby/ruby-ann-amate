@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Tahoma';
+  src: url('/assets/fonts/tahoma-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tahoma';
+  src: url('/assets/fonts/tahoma-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --xp-blue-dark: #0a246a;
+  --xp-blue-mid: #3b78dd;
+  --xp-blue-light: #a6caf0;
+  --xp-blue-titlebar-start: #0058ee;
+  --xp-blue-titlebar-end: #3b8ded;
+  --xp-taskbar-start: #1a5cd7;
+  --xp-taskbar-end: #2a8ae7;
+  --xp-green-start: #3fae4a;
+  --xp-green-end: #1e7d2e;
+  --xp-gold: #ffc73a;
+  --xp-window-bg: #ece9d8;
+  --xp-window-border: #0831d9;
+  --xp-desktop-text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+  --xp-font: 'Tahoma', 'Segoe UI', Arial, sans-serif;
+  --cursor-default: url('/assets/cursors/windows-xp/Normal%20Select.cur'), auto;
+  --cursor-pointer: url('/assets/cursors/windows-xp/Link%20Select.cur'), pointer;
+  --cursor-text: url('/assets/cursors/windows-xp/Text%20Select.cur'), text;
+  --cursor-busy: url('/assets/cursors/windows-xp/Busy.ani'), wait;
+  --cursor-help: url('/assets/cursors/windows-xp/Help%20Select.cur'), help;
+  --cursor-move: url('/assets/cursors/windows-xp/Move.cur'), move;
+  --cursor-resize-v: url('/assets/cursors/windows-xp/Vertical%20Resize.cur'), ns-resize;
+  --cursor-resize-h: url('/assets/cursors/windows-xp/Horizontal%20Resize.cur'), ew-resize;
+  --cursor-resize-d1: url('/assets/cursors/windows-xp/Diagonal%20Resize%201.cur'), nwse-resize;
+  --cursor-resize-d2: url('/assets/cursors/windows-xp/Diagonal%20Resize%202.cur'), nesw-resize;
+  --cursor-unavailable: url('/assets/cursors/windows-xp/Unavailable.cur'), not-allowed;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--xp-font);
+  cursor: var(--cursor-default);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #000;
+}
+
+button, a, [role='button'], .clickable {
+  cursor: var(--cursor-pointer);
+}
+
+input, textarea {
+  cursor: var(--cursor-text);
+  font-family: var(--xp-font);
+}
+
+::selection {
+  background: var(--xp-blue-light);
+  color: #000;
+}
+
+/* Windows XP style scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+::-webkit-scrollbar-track {
+  background: #ece9d8;
+  border-left: 1px solid #b8b5a2;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f5f4ea 0%, #d8d5c0 50%, #b8b5a2 100%);
+  border: 1px solid #8a8770;
+  border-radius: 0;
+}
+::-webkit-scrollbar-button {
+  background: #ece9d8;
+  border: 1px solid #8a8770;
+  height: 16px;
+  width: 16px;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.xp-button {
+  font-family: var(--xp-font);
+  font-size: 11px;
+  padding: 4px 14px;
+  background: linear-gradient(180deg, #fefefe 0%, #ece9d8 45%, #d4d0c0 100%);
+  border: 1px solid #003c74;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 #fff;
+  cursor: var(--cursor-pointer);
+}
+.xp-button:hover {
+  background: linear-gradient(180deg, #fff6d5 0%, #ffe8a1 45%, #ffd979 100%);
+  border-color: #e6a817;
+}
+.xp-button:active {
+  background: linear-gradient(180deg, #d4d0c0 0%, #ece9d8 100%);
+}
+
+.scanline-noselect { user-select: none; -webkit-user-select: none; }
+
+.rubyxp-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bee-flyover {
+  position: fixed;
+  top: 40%;
+  left: -60px;
+  font-size: 32px;
+  z-index: 40000;
+  animation: bee-fly 3s linear forwards;
+  pointer-events: none;
+}
+
+@keyframes bee-fly {
+  0% { left: -60px; top: 60%; transform: rotate(0deg); }
+  25% { top: 30%; }
+  50% { top: 55%; }
+  75% { top: 25%; }
+  100% { left: 110%; top: 40%; }
+}
+

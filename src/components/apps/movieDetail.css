@@ -1,0 +1,34 @@
+.movie-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background: #ece9d8;
+}
+.movie-detail-poster {
+  width: 180px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+.movie-detail-info {
+  text-align: center;
+}
+.movie-detail-info h2 {
+  font-size: 15px;
+  margin: 0 0 8px;
+  color: #0a246a;
+}
+.movie-detail-info p {
+  font-size: 12px;
+  margin: 3px 0;
+}
+.movie-detail-tag {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}

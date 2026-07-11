@@ -1,0 +1,103 @@
+.shutdown-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20000;
+}
+.shutdown-dialog {
+  width: 360px;
+  max-width: 90vw;
+  background: var(--xp-window-bg);
+  border: 2px solid #0a246a;
+  border-radius: 8px;
+  box-shadow: 4px 4px 24px rgba(0,0,0,0.5);
+  padding: 18px;
+}
+.shutdown-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0a246a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.shutdown-options {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.shutdown-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-size: 11px;
+  cursor: var(--cursor-pointer);
+  padding: 8px;
+  border-radius: 4px;
+}
+.shutdown-option:hover { background: rgba(59,120,221,0.15); }
+.shutdown-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+}
+.shutdown-icon.standby { background: linear-gradient(180deg, #6fb7ff, #1a5cd7); }
+.shutdown-icon.turnoff { background: linear-gradient(180deg, #ff8f6e, #d8342a); }
+.shutdown-icon.restart { background: linear-gradient(180deg, #7fd88a, #1e7d2e); }
+.shutdown-cancel {
+  display: block;
+  margin: 0 auto;
+}
+
+.standby-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  color: #9fc3ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: var(--cursor-pointer);
+  z-index: 30000;
+}
+.standby-screen p { font-size: 18px; margin: 0; }
+.standby-screen span { font-size: 12px; opacity: 0.7; }
+
+.turnoff-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30000;
+}
+.turnoff-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  text-align: center;
+  animation: fade-in-slow 0.8s ease;
+}
+.turnoff-message p { margin: 0; font-size: 16px; }
+.turnoff-signature { font-style: italic; font-size: 13px; color: #ccc; }
+
+@keyframes fade-in-slow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

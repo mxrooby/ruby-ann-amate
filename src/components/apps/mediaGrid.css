@@ -1,0 +1,38 @@
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  gap: 12px;
+  padding: 14px;
+  overflow-y: auto;
+  height: 100%;
+  align-content: start;
+}
+.media-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 120px;
+  background: #fff;
+  border: 1px solid #c9c5b0;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: var(--cursor-pointer);
+}
+.media-thumb:hover {
+  border-color: #3b78dd;
+  box-shadow: 0 0 0 2px rgba(59,120,221,0.25);
+}
+.media-thumb img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 2px;
+  background: #eee;
+}
+.media-thumb span {
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+}

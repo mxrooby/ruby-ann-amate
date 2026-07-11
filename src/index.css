@@ -1,0 +1,5 @@
+/* Vite default reset removed in favor of src/styles/global.css (XP theme).
+   Kept minimal so nothing here fights the desktop chrome. */
+body {
+  margin: 0;
+}

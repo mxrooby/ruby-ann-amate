@@ -1,0 +1,58 @@
+.boot-screen {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  color: #fff;
+  animation: boot-fade-in 0.4s ease;
+}
+
+.boot-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.boot-logo img {
+  width: 72px;
+  height: 72px;
+  animation: boot-pulse 1.8s ease-in-out infinite;
+}
+.boot-title {
+  font-family: var(--xp-font);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.boot-bar {
+  width: 220px;
+  height: 10px;
+  border: 1px solid #3a6ea5;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #0a1a30;
+}
+.boot-bar-fill {
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(90deg, #1a5cd7, #6ab6ff);
+  animation: boot-loading 1.1s ease-in-out infinite;
+}
+
+@keyframes boot-loading {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(340%); }
+}
+@keyframes boot-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.06); opacity: 1; }
+}
+@keyframes boot-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

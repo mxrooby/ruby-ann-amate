@@ -1,0 +1,18 @@
+.resume-viewer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.resume-toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--xp-window-bg);
+  border-bottom: 1px solid #b8b5a2;
+}
+.resume-toolbar a { text-decoration: none; color: #000; }
+.resume-frame {
+  flex: 1;
+  border: none;
+  background: #555;
+}

@@ -1,0 +1,26 @@
+.notepad {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+}
+.notepad-menubar {
+  display: flex;
+  gap: 16px;
+  padding: 4px 10px;
+  background: var(--xp-window-bg);
+  border-bottom: 1px solid #b8b5a2;
+  font-size: 11px;
+}
+.notepad-body {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 10px 12px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+}

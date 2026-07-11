@@ -1,0 +1,52 @@
+.terminal {
+  height: 100%;
+  background: #000;
+  color: #f0f0f0;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 14px;
+  padding: 8px 10px;
+  overflow-y: auto;
+  cursor: var(--cursor-text);
+  line-height: 1.35;
+}
+
+.terminal-line {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+}
+
+.terminal-prompt {
+  color: #f0f0f0;
+  white-space: pre;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f0f0f0;
+  font-family: inherit;
+  font-size: inherit;
+  caret-color: #f0f0f0;
+  margin-left: 2px;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  background: #f0f0f0;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

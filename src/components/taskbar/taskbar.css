@@ -1,0 +1,92 @@
+.taskbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #2a8ae7 0%, #1a5cd7 55%, #0d3fae 100%);
+  border-top: 1px solid #5aa6f5;
+  z-index: 5000;
+  padding-right: 4px;
+  gap: 4px;
+}
+
+.start-button {
+  height: 28px;
+  margin: 3px 4px;
+  padding: 0 14px 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(180deg, #4fbf50 0%, #1e7d2e 100%);
+  border: 1px solid #0d5c1a;
+  border-radius: 6px 14px 14px 6px;
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 13px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+  cursor: var(--cursor-pointer);
+}
+.start-button:hover { filter: brightness(1.08); }
+.start-button.active { filter: brightness(0.85); }
+.start-button img { width: 20px; height: 20px; }
+
+.taskbar-divider {
+  width: 1px;
+  height: 24px;
+  background: rgba(255,255,255,0.25);
+  margin: 0 2px;
+}
+
+.taskbar-tasks {
+  flex: 1;
+  display: flex;
+  gap: 3px;
+  overflow: hidden;
+  height: 28px;
+  align-items: center;
+}
+
+.taskbar-task {
+  height: 26px;
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  background: linear-gradient(180deg, #4a90ec 0%, #2465cf 100%);
+  border: 1px solid #1848a0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: var(--cursor-pointer);
+}
+.taskbar-task.focused {
+  background: linear-gradient(180deg, #1e4faa 0%, #123a82 100%);
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+}
+.taskbar-task img { width: 16px; height: 16px; flex-shrink: 0; }
+
+.taskbar-clock {
+  height: 28px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-size: 11px;
+  border-left: 1px solid rgba(255,255,255,0.25);
+}
+.mute-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  cursor: var(--cursor-pointer);
+}
