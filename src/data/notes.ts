@@ -32,10 +32,7 @@ mga ginagawa rn:
     title: 'hypnotize-by-xg.txt',
     content: `"HYPNOTIZE" - XG
 
-(lyrics not reproduced here for copyright reasons —
-this file is just a reminder of my current favorite song on repeat.)
-
-If you want to hear it, look up "HYPNOTIZE by XG" on Spotify. 🎧`,
+im hypnotizing`,
   },
   {
     id: 'manifestation',

@@ -45,8 +45,14 @@ export const projects: Project[] = [
     takeaway:
       'This project strengthened my skills in machine learning, computer vision, OCR systems, and full project development from model training to deployment.',
     previews: [
-      { file: '/assets/projects/persian-ocr/persian-desktop-preview.png', type: 'image', device: 'laptop' },
-      { file: '/assets/projects/persian-ocr/persian-phone-preview.jpeg', type: 'image', device: 'phone' },
+      { file: '/assets/projects/persian-ocr/persian-desktop-preview-01.png', type: 'image', device: 'laptop' },
+      { file: '/assets/projects/persian-ocr/persian-desktop-preview-02.png', type: 'image', device: 'laptop' },
+      { file: '/assets/projects/persian-ocr/persian-desktop-preview-03.png', type: 'image', device: 'laptop' },
+      { file: '/assets/projects/persian-ocr/persian-desktop-preview-04.png', type: 'image', device: 'laptop' },
+      { file: '/assets/projects/persian-ocr/persian-phone-preview-01.jpeg', type: 'image', device: 'phone' },
+      { file: '/assets/projects/persian-ocr/persian-phone-preview-02.jpeg', type: 'image', device: 'phone' },
+      { file: '/assets/projects/persian-ocr/persian-phone-preview-03.jpeg', type: 'image', device: 'phone' },
+      { file: '/assets/projects/persian-ocr/persian-phone-preview-04.jpeg', type: 'image', device: 'phone' },
     ],
   },
   {
