@@ -29,7 +29,6 @@ export const techStack: TechItem[] = [
   { name: 'GitHub', category: 'Tools & Software', simpleIconSlug: 'github', color: '#181717' },
   { name: 'Figma', category: 'Tools & Software', simpleIconSlug: 'figma', color: '#F24E1E' },
   { name: 'Unity', category: 'Tools & Software', simpleIconSlug: 'unity', color: '#FFFFFF' },
-  { name: 'Power BI', category: 'Tools & Software', simpleIconSlug: 'powerbi', color: '#F2C811' },
 ];
 
 /** Local SVG fallback path, used only when no Simple Icons slug renders. */
