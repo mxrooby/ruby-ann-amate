@@ -8,27 +8,38 @@ export const techStack: TechItem[] = [
   { name: 'JavaScript', category: 'Frontend', simpleIconSlug: 'javascript', color: '#F7DF1E' },
   { name: 'TypeScript', category: 'Frontend', simpleIconSlug: 'typescript', color: '#3178C6' },
   { name: 'Vite', category: 'Frontend', simpleIconSlug: 'vite', color: '#646CFF' },
+  { name: 'Next.js', category: 'Frontend', simpleIconSlug: 'nextdotjs', color: '#000000' },
+  { name: 'Tailwind CSS', category: 'Frontend', simpleIconSlug: 'tailwindcss', color: '#06B6D4' },
+
   // Backend
   { name: 'PHP', category: 'Backend', simpleIconSlug: 'php', color: '#777BB4' },
   { name: 'Laravel', category: 'Backend', simpleIconSlug: 'laravel', color: '#FF2D20' },
   { name: 'Node.js', category: 'Backend', simpleIconSlug: 'nodedotjs', color: '#339933' },
+  { name: 'NestJS', category: 'Backend', simpleIconSlug: 'nestjs', color: '#E0234E' },
   { name: 'Firebase', category: 'Backend', simpleIconSlug: 'firebase', color: '#FFCA28' },
-  // ML & AI
+
+  // Machine Learning & AI
   { name: 'Python', category: 'Machine Learning & AI', simpleIconSlug: 'python', color: '#3776AB' },
   { name: 'PyTorch', category: 'Machine Learning & AI', simpleIconSlug: 'pytorch', color: '#EE4C2C' },
   { name: 'OpenCV', category: 'Machine Learning & AI', simpleIconSlug: 'opencv', color: '#5C3EE8' },
   { name: 'Gemini API', category: 'Machine Learning & AI', simpleIconSlug: 'googlegemini', color: '#8E75B2' },
   { name: 'Gradio', category: 'Machine Learning & AI', localIcon: undefined, color: '#F97316' },
+
   // Databases
   { name: 'MySQL', category: 'Databases', simpleIconSlug: 'mysql', color: '#4479A1' },
-  { name: 'MongoDB', category: 'Databases', simpleIconSlug: 'mongodb', color: '#47A248' },
+  { name: 'PostgreSQL', category: 'Databases', simpleIconSlug: 'postgresql', color: '#4169E1' },
   { name: 'SQLite', category: 'Databases', simpleIconSlug: 'sqlite', color: '#003B57' },
+  { name: 'Supabase', category: 'Databases', simpleIconSlug: 'supabase', color: '#3ECF8E' },
   { name: 'Firebase Firestore', category: 'Databases', simpleIconSlug: 'firebase', color: '#FFCA28' },
+
   // Tools & Software
   { name: 'Git', category: 'Tools & Software', simpleIconSlug: 'git', color: '#F05032' },
   { name: 'GitHub', category: 'Tools & Software', simpleIconSlug: 'github', color: '#181717' },
   { name: 'Figma', category: 'Tools & Software', simpleIconSlug: 'figma', color: '#F24E1E' },
   { name: 'Unity', category: 'Tools & Software', simpleIconSlug: 'unity', color: '#FFFFFF' },
+  { name: 'Prisma', category: 'Tools & Software', simpleIconSlug: 'prisma', color: '#2D3748' },
+  { name: 'Jest', category: 'Tools & Software', simpleIconSlug: 'jest', color: '#C21325' },
+  { name: 'Vitest', category: 'Tools & Software', simpleIconSlug: 'vitest', color: '#6E9F18' },
 ];
 
 /** Local SVG fallback path, used only when no Simple Icons slug renders. */
@@ -50,7 +61,6 @@ export const localIconOverrides: Record<string, string> = {
   'Gemini API': '/assets/tech-icons/googlegemini.svg',
   Unity: '/assets/tech-icons/unity.svg',
   PyTorch: '/assets/tech-icons/pytorch.svg',
-  MongoDB: '/assets/tech-icons/mongodb.svg',
   Python: '/assets/tech-icons/python.svg',
   GitHub: '/assets/tech-icons/github.svg',
 };
